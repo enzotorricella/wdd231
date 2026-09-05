@@ -1,0 +1,12 @@
+@media screen and (min-width: 700px) {
+    .header-inner { padding-top: 24px; padding-bottom: 24px; }
+    .identity span { font-size: 1.4rem; }
+    .identity small { font-size: .85rem; }
+    #menu-button { display: none; }
+    .nav-inner, nav.open .nav-inner { display: flex; flex-direction: row; }
+    nav a { min-width: 130px; text-align: center; }
+    main { padding-top: 32px; }
+    .intro-grid { grid-template-columns: 2fr 1fr; }
+    .panel-content { padding: 24px; }
+    .course-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

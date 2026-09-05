@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Enzo Torricella | WDD 231</title>
+    <meta name="description" content="Enzo Torricella's WDD 231 course home page. Explore my web development projects and Web and Computer Programming certificate courses.">
+    <meta name="author" content="Enzo Torricella">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+        <div class="header-inner">
+            <img src="images/logo.svg" alt="ET site logo" width="48" height="48">
+            <div class="identity"><span>Enzo Torricella</span><small>WDD 231 · Web Frontend Development I</small></div>
+            <button id="menu-button" type="button" aria-label="Open navigation menu" aria-controls="navigation" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+        </div>
+    </header>
+    <nav id="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="./" aria-current="page">Home</a>
+            <a href="chamber/">Chamber</a>
+            <a href="final/">Final</a>
+        </div>
+    </nav>
+    <main id="main">
+        <h1>Home</h1>
+        <div class="intro-grid">
+            <section class="panel about">
+                <h2>About Me</h2>
+                <div class="panel-content">
+                    <p class="eyebrow">HELLO FROM ARGENTINA</p>
+                    <p class="intro">Learning to build for the web.</p>
+                    <p>My name is Enzo Torricella. I am from Argentina, and I study software development. I work with programming, databases, and technical support.</p>
+                    <p>This is my space to put HTML, CSS, and JavaScript into practice. Follow my projects and explore the courses in my Web and Computer Programming certificate below.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                </div>
+            </section>
+            <section class="panel photo">
+                <h2>Student Photo</h2>
+                <figure><img src="images/profile.png" alt="Enzo Torricella" width="200" height="200"><figcaption>Enzo Torricella <span>Argentina</span></figcaption></figure>
+            </section>
+        </div>
+        <section class="panel certificate">
+            <h2>Web Certificate Courses</h2>
+            <div class="panel-content">
+                <div class="filters" role="group" aria-label="Filter courses by subject">
+                    <button type="button" data-filter="All" aria-pressed="true">All</button>
+                    <button type="button" data-filter="CSE" aria-pressed="false">CSE</button>
+                    <button type="button" data-filter="WDD" aria-pressed="false">WDD</button>
+                </div>
+                <p class="course-key">✓ Completed <span>·</span> ○ Not yet completed</p>
+                <div id="course-list" class="course-grid"></div>
+                <p id="credit-total" role="status" aria-live="polite"></p>
+                <noscript><p>Enable JavaScript to view and filter the certificate courses and their credits.</p></noscript>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/enzotorricella/wdd231" aria-label="WDD 231 repository on GitHub"><img src="images/github.svg" alt="GitHub" width="28" height="28"></a>
+            <a href="https://www.linkedin.com/in/enzo-torricella/" aria-label="Enzo Torricella on LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn" width="28" height="28"></a>
+            <a href="https://www.youtube.com/@BYUPathwayWorldwide" aria-label="BYU-Pathway Worldwide on YouTube"><img src="images/youtube.svg" alt="YouTube" width="28" height="28"></a>
+        </div>
+        <p><span id="currentyear"></span> · Enzo Torricella · Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
