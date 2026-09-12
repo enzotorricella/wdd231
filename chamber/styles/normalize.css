@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+html { line-height: 1.15; -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+button, input, select { font: inherit; }
+button, select { cursor: pointer; }
+img { max-width: 100%; height: auto; }
+[hidden] { display: none !important; }

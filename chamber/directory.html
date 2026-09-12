@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Business Directory | Rosario Chamber of Commerce</title>
+    <meta name="description" content="Explore Rosario's business community. Browse seven sample chamber members, from independent shops to creative studios, in grid or list view.">
+    <meta name="author" content="Enzo Torricella">
+    <meta property="og:title" content="Rosario Chamber | Business Directory">
+    <meta property="og:description" content="Local businesses. Shared possibilities. Explore the Rosario Chamber member directory.">
+    <meta property="og:image" content="https://enzotorricella.github.io/wdd231/chamber/images/rosario-monument.jpg">
+    <meta property="og:url" content="https://enzotorricella.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header>
+        <div class="masthead wrap">
+            <a class="brand" href="index.html"><img src="images/logo.svg" width="48" height="48" alt=""><span>rosario<span class="brand-dot">.</span><small>CHAMBER OF COMMERCE</small></span></a>
+            <button id="menu-button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation">Menu <span aria-hidden="true">☰</span></button>
+            <nav id="navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a><a href="directory.html" aria-current="page">Directory</a><a href="join.html">Join</a><a href="discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="wrap">
+        <section class="intro" aria-labelledby="page-title">
+            <div class="intro-copy"><p class="eyebrow">SANTA FE, ARGENTINA / MEMBER GUIDE</p><h1 id="page-title">Local people.<br><em>Remarkable work.</em></h1><p class="intro-description">A city is built by the people who get things moving. Discover the shops, studios, and services in our Rosario business community.</p><a class="jump-link" href="#directory">Explore the directory <span aria-hidden="true">↓</span></a></div>
+            <figure class="city-photo"><img src="images/rosario-monument.jpg" alt="National Flag Memorial overlooking Rosario's public square" width="330" height="513"><figcaption><span>01 / A CITY WITH ROOTS</span><span>Rosario · Paraná River</span></figcaption></figure>
+        </section>
+        <section id="directory" aria-labelledby="directory-title">
+            <div class="directory-heading"><div><p class="eyebrow">THE LOCAL INDEX</p><h2 id="directory-title">Business directory<span class="count">07</span></h2></div><div class="view-toggle" role="group" aria-label="Directory layout"><button id="grid-view" aria-pressed="true"><span aria-hidden="true">▦</span> Grid</button><button id="list-view" aria-pressed="false"><span aria-hidden="true">☰</span> List</button></div></div>
+            <div class="filter-bar"><label for="search">Find a business<input type="search" id="search" placeholder="Name, service, or neighborhood"></label><label for="category">Business sector<select id="category"><option value="all">All sectors</option></select></label></div>
+            <p class="sample-note">An academic directory of fictional businesses. Contact details and example.com website links are illustrative.</p>
+            <p id="status" role="status" aria-live="polite">Loading the directory…</p>
+            <button id="retry" hidden>Try loading again</button>
+            <div id="members" class="grid"></div>
+            <noscript><p>Please enable JavaScript to load the business directory.</p></noscript>
+        </section>
+        <aside class="closing-note"><span aria-hidden="true">↗</span><p>Good things happen<br><strong>when we connect locally.</strong></p><a href="join.html">Explore membership</a></aside>
+    </main>
+    <footer><div class="wrap footer-grid"><div><strong>Rosario Chamber of Commerce</strong><p>Rosario, Santa Fe, Argentina<br>Sample office: Córdoba 1200<br>+54 341 000 0100<br><a href="mailto:hello@rosariochamber.example">hello@rosariochamber.example</a></p></div><nav aria-label="Social media"><a href="https://www.linkedin.com/">LinkedIn ↗</a><a href="https://www.instagram.com/">Instagram ↗</a><a href="https://www.youtube.com/">YouTube ↗</a></nav><div><p>WDD 231 · Enzo Torricella<br>© <span id="year"></span> Rosario Chamber</p><p id="last-modified"></p><p class="credits">Student project; not an official chamber.<br>Photo: <a href="https://commons.wikimedia.org/wiki/File:A_la_Bandera.JPG">JeSantacruz</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, resized.</p></div></div></footer>
+</body>
+</html>
