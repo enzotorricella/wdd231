@@ -6,7 +6,7 @@ const menu = document.querySelector('#menu-button');
 menu.addEventListener('click', () => {
     const expanded = menu.getAttribute('aria-expanded') !== 'true';
     menu.setAttribute('aria-expanded', String(expanded));
-    menu.setAttribute('aria-label', expanded ? 'Close navigation' : 'Open navigation');
+    menu.setAttribute('aria-label', expanded ? 'Close navigation menu' : 'Open navigation menu');
     document.querySelector('#navigation').classList.toggle('open', expanded);
 });
 

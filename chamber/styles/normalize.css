@@ -4,4 +4,4 @@ body { margin: 0; }
 button, input, select { font: inherit; }
 button, select { cursor: pointer; }
 img { max-width: 100%; height: auto; }
-[hidden] { display: none !important; }
+[hidden] { display: none; }
