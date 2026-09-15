@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rosario Chamber of Commerce | Rosario Chamber</title>
-    <meta name="description" content="Our community brings together independent businesses, creative teams, and local services in Rosario. Explore the directory to see who is part of it.">
+    <title>Home | Rosario Chamber of Commerce</title>
+    <meta name="description" content="Connect with Rosario businesses, discover local events, check the weather, and learn how to join the Rosario Chamber of Commerce.">
     <meta name="author" content="Enzo Torricella">
-    <meta property="og:title" content="Business Directory | Rosario Chamber of Commerce">
-    <meta property="og:description" content="Local businesses. Shared possibilities. Explore the Rosario Chamber member directory.">
+    <meta property="og:title" content="Rosario Chamber of Commerce | Home">
+    <meta property="og:description" content="Meet Rosario businesses, discover local events, and connect with the city's chamber community.">
     <meta property="og:image" content="https://enzotorricella.github.io/wdd231/chamber/images/rosario-monument.jpg">
     <meta property="og:url" content="https://enzotorricella.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
@@ -18,20 +18,29 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header>
-        <div class="masthead wrap">
-            <a class="brand" href="index.html" aria-current="page"><img src="images/logo.svg" width="48" height="48" alt=""><span>rosario<span class="brand-dot">.</span><small>CHAMBER OF COMMERCE</small></span></a>
-            <button id="menu-button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation menu">Menu <span aria-hidden="true">☰</span></button>
-            <nav id="navigation" aria-label="Main navigation">
-                <a href="index.html" aria-current="page">Home</a><a href="directory.html">Directory</a><a href="join.html">Join</a><a href="discover.html">Discover</a>
-            </nav>
+    <header><div class="masthead wrap">
+        <a class="brand" href="index.html"><img src="images/logo.svg" width="48" height="48" alt=""><span>rosario<span class="brand-dot">.</span><small>CHAMBER OF COMMERCE</small></span></a>
+        <button id="menu-button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation menu">Menu <span aria-hidden="true">☰</span></button>
+        <nav id="navigation" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="directory.html">Directory</a><a href="join.html">Join</a><a href="discover.html">Discover</a></nav>
+    </div></header>
+    <main id="main">
+        <section class="home-hero wrap" aria-labelledby="page-title">
+            <img src="images/rosario-monument.jpg" width="1200" height="630" alt="National Flag Memorial and plaza in Rosario">
+            <div class="hero-message"><p class="eyebrow">ROSARIO, SANTA FE</p><h1 id="page-title">Grow here.<br><em>Belong here.</em></h1><p>Connect with the people and businesses shaping our city.</p><a class="cta" href="join.html">Join the chamber</a></div>
+        </section>
+        <div class="home-grid wrap">
+            <section class="events" aria-labelledby="events-title"><p class="eyebrow">WHAT'S HAPPENING</p><h2 id="events-title">Current events</h2>
+                <article><time datetime="2026-09-18">SEP 18</time><div><h3>Business after hours</h3><p>Meet local entrepreneurs at the riverside networking evening.</p></div></article>
+                <article><time datetime="2026-09-24">SEP 24</time><div><h3>Digital skills workshop</h3><p>Practical tools to help small businesses improve their online presence.</p></div></article>
+            </section>
+            <section class="weather" aria-labelledby="weather-title"><p class="eyebrow">LIVE FROM ROSARIO</p><h2 id="weather-title">Weather</h2><div id="current-weather" class="current-weather" aria-live="polite"></div><p id="weather-status">Loading Rosario weather…</p><ul id="forecast" class="forecast"></ul></section>
         </div>
-    </header>
-    <main id="main" class="wrap"><section class="intro"><div class="intro-copy"><p class="eyebrow">ROSARIO, SANTA FE / CHAMBER OF COMMERCE</p><h1>A city of connections.</h1><p class="intro-description">Our community brings together independent businesses, creative teams, and local services in Rosario. Explore the directory to see who is part of it.</p><a class="jump-link" href="directory.html">Explore the business directory →</a></div><figure class="city-photo"><img src="images/rosario-monument.jpg" width="330" height="513" alt="National Flag Memorial in Rosario"><figcaption>ROSARIO / SANTA FE, ARGENTINA</figcaption></figure></section></main>
-    <footer><div class="wrap footer-grid"><div><strong>Rosario Chamber of Commerce</strong><p>Rosario, Santa Fe, Argentina<br>Sample office: Córdoba 1200<br>+54 341 000 0100<br><a href="mailto:hello@rosariochamber.example">hello@rosariochamber.example</a></p></div><nav aria-label="Social media"><a href="https://www.linkedin.com/">LinkedIn ↗</a><a href="https://www.instagram.com/">Instagram ↗</a><a href="https://www.youtube.com/">YouTube ↗</a></nav><div><p>WDD 231 · Enzo Torricella<br>© <span id="year"></span> Rosario Chamber</p><p id="last-modified"></p><p class="credits">Student project; not an official chamber.<br>Photo: <a href="https://commons.wikimedia.org/wiki/File:A_la_Bandera.JPG">JeSantacruz</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, resized.</p></div></div></footer>
+        <section class="member-feature wrap" aria-labelledby="spotlight-title"><p class="eyebrow">MEET OUR MEMBERS</p><h2 id="spotlight-title">Business spotlights</h2><div id="spotlights" class="spotlights" aria-live="polite"><p>Loading member spotlights…</p></div></section>
+    </main>
+    <footer><div class="wrap footer-grid"><div><strong>Rosario Chamber of Commerce</strong><p>Rosario, Santa Fe, Argentina<br>Sample office: Córdoba 1200<br>+54 341 000 0100<br><a href="mailto:hello@rosariochamber.example">hello@rosariochamber.example</a></p></div><nav aria-label="Social media"><a href="https://www.linkedin.com/">LinkedIn</a><a href="https://www.instagram.com/">Instagram</a><a href="https://www.youtube.com/">YouTube</a></nav><div><p>WDD 231 · Enzo Torricella<br>© <span id="year"></span> Rosario Chamber</p><p id="last-modified"></p><p class="credits">Student project; not an official chamber.<br>Photo: <a href="https://commons.wikimedia.org/wiki/File:A_la_Bandera.JPG">JeSantacruz</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, resized.</p></div></div></footer>
 </body>
 </html>

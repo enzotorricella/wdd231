@@ -1,0 +1,263 @@
+Page:
+🔗 https://enzotorricella.github.io/wdd231/index.html
+Repository:
+🔗 https://github.com/enzotorricella/wdd231
+✅ Pass
+❌ Issue
+➡️ Review
+Naming Conventions
+images Folder
+✅
+A subfolder named images is required.
+styles Folder
+✅
+A subfolder named styles is required.
+scripts Folder
+✅
+A subfolder named scripts is required.
+Files
+✅
+
+All file names follow the course's naming conventions.
+
+HTML Document
+W3C HTML Validation
+✅
+
+No HTML validation errors were found. Use the link below to check for warnings or other useful information.
+
+🔗 HTML Validation Service Report on w3.org
+
+doctype
+✅
+
+An HTML5 doctype is required and is the first line of the document.
+
+<html>
+✅
+An all enclosing <html> element is required and a lang attribute must be applied to the opening <html> tag.
+<head>
+✅
+An enclosing <head> element (with opening and closing tags) must exist inside the <html> element and must come before the <body> element.
+<body>
+✅
+An enclosing <body> element (with opening and closing tags) must exist inside the <html> element, appear after the </head>, and before the </html> closing tag.
+lowercase HTML tags
+✅
+
+It is best practice to use lowercase for all HTML tags.
+
+HTML attribute spacing
+✅
+
+It is best practice to have no spaces around the equal sign in attributes, e.g., <html lang="en-US">
+
+<head> Elements
+Meta Charset
+✅
+The meta charset attribute must be properly declared.
+<meta charset="UTF-8">
+Meta Viewport
+✅
+The meta viewport attribute must be properly declared.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+➡️ Review: Home | Enzo Torricella | WDD 231
+✅ <title> exists within the <head> element..
+✅ Title content meets basic content requirements.
+Meta Description
+➡️ Requires Content Review: Enzo Torricella's WDD 231 course home page. Explore my web development projects and Web and Computer Programming certificate courses.
+A meta description should be 50-160 characters, descriptive, and unique to the page.
+✅ The meta description exists within the <head> element. (133 characters)
+Meta Author
+➡️ Requires Content Review: Enzo Torricella
+A meta author should be the student's name.
+✅ <meta name="author"> exists within the <head> element.
+<body> Elements
+<header>
+✅
+Document must contain a single <header> element that is inside the <body> and appears before the <main> element.
+<nav>
+✅
+Document must contain a <nav> element element.
+<main>
+✅
+Document must contain a <main> element that is inside the <body> and is between the <header> element and the <footer> element.
+<footer>
+✅
+Document must contain a single <footer> element that is inside the <body> and appears after the <main> element.
+nav <a> links
+The <nav> element should contain at least 4 <a> elements.
+✅ Found 7 <a> elements on the page.
+Link Text
+href
+target
+Skip to content
+✅ #main
+None
+Home
+✅ ./
+None
+Chamber
+✅ chamber/
+None
+Final
+✅ final/
+None
+(empty)
+✅ https://github.com/enzotorricella/wdd231
+None
+(empty)
+✅ https://www.linkedin.com/in/enzo-torricella/
+None
+(empty)
+✅ https://www.youtube.com/@BYUPathwayWorldwide
+None
+<h1>
+✅
+➡️ Requires Content Review: Home
+Document must contain a single <h1> element inside the <main> element. The content should closely match the page title.
+main <section> elements
+✅
+The <main> element must contain at least three <section> elements, and each <section> must include an <h2> heading.
+Images
+All image files must be ✔correctly referenced, ✔be optimized(<= 125 kB), ✔have alt attribute.
+
+
+File Reference
+Size
+Alt Text
+✅ images/logo.svg
+✅ 0 kB
+✅ "ET site logo"
+✅ images/profile.png
+✅ 68 kB
+✅ "Enzo Torricella"
+✅ images/github.svg
+✅ 0 kB
+"GitHub"
+➡️ Review if too short
+✅ images/linkedin.svg
+✅ 0 kB
+"LinkedIn"
+➡️ Review if too short
+✅ images/youtube.svg
+✅ 0 kB
+"YouTube"
+➡️ Review if too short
+CSS
+CSS Files
+The following CSS files were referenced in the HTML:
+styles/small.css
+styles/larger.css
+Google Fonts API
+✅
+Use Google Fonts (fonts.googleapis.com/...) and include all provided preconnect links
+Using the @import method is not allowed.
+
+✅ Found 1 Google Fonts stylesheet link, and required preconnects.
+   Families Used: Roboto:wght@400;500;700
+
+W3C CSS Validation
+✅
+
+No CSS validation errors were found. Use the link below to check for warnings or other useful information.
+
+••• ⚠️ Warnings Found: 1 •••
+
+🔗 CSS Validation Service Report on jigsaw.w3.org
+Parse Errors due to a modern nested CSS structure can be ignored.
+Warnings about the use of CSS Variables can be ignored.
+
+Inline Styles
+✅
+All CSS must be in external stylesheet files.
+Inline styles using the style attribute are not allowed.
+✅ No inline styles found.
+Embedded Styles
+✅
+Embedded styles using <style> tags are not allowed.
+✅ No embedded <style> tags found.
+CSS Frameworks
+✅
+CSS frameworks or utility libraries (Bootstrap, Tailwind, Foundation, etc.) are not permitted for this course. All styling must be custom CSS.
+✅ No CSS frameworks or framework use detected.
+!important
+✅
+The use of !important in CSS is not allowed.
+Use proper specificity and cascading to achieve desired styles.
+✅ No use of !important found in CSS...
+display: flex
+✅
+Use Flexbox at least once.
+✅ Found display: flex (or inline-flex) in rules: .header-inner, nav.open .nav-inner, .tags, .filters, .social-links and 2 more...
+CSS Statistics
+Total Selectors:
+58
+Total Rules:
+57
+Total Declarations:
+170
+Repeated Declarations:
+0
+Color Types Used:
+var, named, hex
+⚠️ Note: Using multiple color types may indicate inconsistent styling.
+Consider standardizing your color approach.
+JavaScript
+External
+✅
+All JavaScript must be in external files.
+✅ All JavaScript is in external files.
+No onClick Attributes
+✅
+JavaScript event handlers must be added via external JS files, not HTML attributes.
+✅ No elements with onclick attributes found.
+document.write
+✅
+The document.write() method must not be used in JavaScript.
+✅ No use of document.write() found in external JS files.
+No jQuery
+✅
+jQuery must not be used in JavaScript.
+✅ No use of jQuery found.
+Referenced js Files
+✅ (file exists) scripts/navigation.js • Location: ✅ <head> • ✅ (defer)
+✅ (file exists) scripts/date.js • Location: ✅ <head> • ✅ (defer)
+✅ (file exists) scripts/course.js • Location: ✅ <head> • ✅ (defer)
+Accessibility
+Color Contrast (WCAG AA)
+Colors Used:
+Text Colors: colors
+body – var(--ink) | rgb(25 47 56)
+a, #menu-button, .filters button – var(--navy) | rgb(18 59 72)
+.identity small, .tags span, figcaption span, .course-key, .course-card small, #lastModified – var(--muted) | rgb(76 97 105)
+nav a, h2, .filters button[aria-pressed="true"] – white | rgb(255 255 255)
+.eyebrow, .course-card.completed small – var(--teal) | rgb(21 92 85)
+Background Colors:
+body – var(--paper) | rgb(245 247 247)
+.skip-link, header, #menu-button, .panel, .filters button, .social-links a – white | rgb(255 255 255)
+nav, h2, .filters button[aria-pressed="true"] – var(--navy) | rgb(18 59 72)
+nav a:hover, nav a[aria-current="page"] – #245667 | rgb(36 86 103)
+.filters button:hover – #e6efee | rgb(230 239 238)
+.course-card – #f5f7f7 | rgb(245 247 247)
+.course-card.completed – #e7f2ed | rgb(231 242 237)
+footer – #e8eeef | rgb(232 238 239)
+.social-links a:hover – #d2e3df | rgb(210 227 223)
+
+Color Contrast Ratios:
+
+Text must have sufficient contrast with its background at the WCAG AA level.
+
+Use CSS Overview in the browser's DevTools for details on actual, rendered color contrast.
+
+Text Color	Background	Ratio	Required	Status
+ rgb(0 0 0)	 rgb(255 255 255)	21.00:1	4.5:1 (normal)	🙂 OK
+ rgb(18 59 72)	 rgb(255 255 255)	12.04:1	4.5:1 (normal)	🙂 OK
+ rgb(25 47 56)	 rgb(255 255 255)	13.95:1	3:1 (large)	🙂 OK
+ rgb(76 97 105)	 rgb(255 255 255)	6.52:1	4.5:1 (normal)	🙂 OK
+ rgb(255 255 255)	 rgb(36 86 103)	8.07:1	4.5:1 (normal)	🙂 OK
+ rgb(255 255 255)	 rgb(18 59 72)	12.04:1	4.5:1 (normal)	🙂 OK
+ rgb(25 47 56)	 rgb(245 247 247)	12.98:1	3:1 (large)	🙂 OK
+ rgb(21 92 85)	 rgb(255 255 255)	7.80:1	4.5:1 (normal)	🙂 OK
+ rgb(25 47 56)	 rgb(232 238 239)	11.90:1	4.5:1 (normal)	🙂 OK

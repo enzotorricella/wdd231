@@ -66,3 +66,28 @@ footer { background: var(--ink); color: var(--paper); padding: 34px 0; font-size
 footer nav { display: flex; flex-wrap: wrap; gap: 20px; }
 footer a:hover { color: #ffd0ba; }
 .credits { font-size: .68rem; color: #dfdfd4; }
+.home-hero { position: relative; margin-top: 24px; }
+.home-hero > img { display: block; width: 100%; height: 520px; object-fit: cover; filter: brightness(.58); }
+.hero-message { position: absolute; inset: auto 24px 28px; color: white; max-width: 620px; }
+.hero-message h1 { font-size: clamp(2.8rem, 11vw, 5.5rem); }
+.hero-message h1 em { color: white; }
+.hero-message > p:not(.eyebrow) { max-width: 430px; }
+.cta { display: inline-block; margin-top: 12px; padding: 14px 20px; background: var(--accent); color: white; font-weight: 700; text-decoration: none; }
+.cta:hover { background: white; color: var(--ink); }
+.home-grid, .member-feature { padding: 44px 0; }
+.home-grid { display: grid; gap: 44px; border-bottom: 1px solid var(--ink); }
+.events article { display: grid; grid-template-columns: 64px 1fr; gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.events time { color: var(--accent); font-weight: 800; }
+.events h3, .events p { margin: 0 0 6px; }
+.current-weather { display: flex; align-items: center; min-height: 100px; }
+.current-weather img { width: 90px; height: 90px; }
+.current-weather p { margin: 2px 0; text-transform: capitalize; }
+.temperature { display: block; font-size: 2.4rem; }
+.forecast { padding: 0; margin: 20px 0 0; list-style: none; }
+.forecast li { display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid var(--line); }
+.spotlights { display: grid; gap: 28px; margin-top: 28px; }
+.spotlight-card { border-top: 2px solid var(--ink); padding-top: 14px; }
+.spotlight-card img { width: 100%; height: 170px; object-fit: cover; }
+.spotlight-card .eyebrow { margin: 14px 0 5px; }
+.spotlight-card h3 { margin: 0 0 12px; }
+.spotlight-card address { display: grid; font-style: normal; font-size: .85rem; margin-bottom: 12px; }

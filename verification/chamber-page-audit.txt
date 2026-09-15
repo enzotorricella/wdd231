@@ -1,0 +1,288 @@
+Page:
+🔗 https://enzotorricella.github.io/wdd231/chamber/directory.html
+Repository:
+🔗 https://github.com/enzotorricella/wdd231
+✅ Pass
+❌ Issue
+➡️ Review
+Naming Conventions
+images Folder
+✅
+A subfolder named images is required.
+styles Folder
+✅
+A subfolder named styles is required.
+scripts Folder
+✅
+A subfolder named scripts is required.
+Files
+✅
+
+All file names follow the course's naming conventions.
+
+HTML Document
+W3C HTML Validation
+✅
+
+No HTML validation errors were found. Use the link below to check for warnings or other useful information.
+
+🔗 HTML Validation Service Report on w3.org
+
+doctype
+✅
+
+An HTML5 doctype is required and is the first line of the document.
+
+<html>
+✅
+An all enclosing <html> element is required and a lang attribute must be applied to the opening <html> tag.
+<head>
+✅
+An enclosing <head> element (with opening and closing tags) must exist inside the <html> element and must come before the <body> element.
+<body>
+✅
+An enclosing <body> element (with opening and closing tags) must exist inside the <html> element, appear after the </head>, and before the </html> closing tag.
+lowercase HTML tags
+✅
+
+It is best practice to use lowercase for all HTML tags.
+
+HTML attribute spacing
+✅
+
+It is best practice to have no spaces around the equal sign in attributes, e.g., <html lang="en-US">
+
+<head> Elements
+Meta Charset
+✅
+The meta charset attribute must be properly declared.
+<meta charset="UTF-8">
+Meta Viewport
+✅
+The meta viewport attribute must be properly declared.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+➡️ Review: Business Directory | Rosario Chamber of Commerce
+Title must include the following: Directory
+✅ <title> exists within the <head> element..
+✅ Title content meets basic content requirements.
+Meta Description
+➡️ Requires Content Review: Explore Rosario's business community. Browse seven sample chamber members, from independent shops to creative studios, in grid or list view.
+A meta description should be 50-160 characters, descriptive, and unique to the page.
+✅ The meta description exists within the <head> element. (140 characters)
+Meta Author
+➡️ Requires Content Review: Enzo Torricella
+A meta author should be the student's name.
+✅ <meta name="author"> exists within the <head> element.
+Favicon
+✅
+Provide a favicon using <link rel="icon" href="/path/favicon.ico"> (or PNG/SVG).
+✅ Found favicon in <head>: images/logo.svg
+og:title
+➡️ Requires Content Review: ✅ Business Directory | Rosario Chamber of Commerce
+– Length 48 characters
+The og:title content provides the title of your page when shared on social media and should use natural language between 40-60 characters. It can be similar to the <title> tag content.
+og:description
+➡️ Requires Content Review: ✅ Local businesses. Shared possibilities. Explore the Rosario Chamber member directory.
+– Length 85 characters
+
+The og:description content provides a brief summary of your page when shared on social media and should use natural language between 50-160 characters. Make it human and persuasive
+og:image
+✅
+Provide a working meta property="og:image" using an absolute URL value.
+✅ https://enzotorricella.github.io/wdd231/chamber/images/rosario-monument.jpg
+Ideally, the og:image content should be a full, canonical URL to an image that is at least 1200x630 pixels for best display on high resolution devices. It should be on the same github.io domain and located in an images/ subfolder to ensure it can be accessed and displayed properly when shared on social media.
+og:url
+✅
+Provide a working meta property="og:url" content value that is an absolute URL.
+✅ https://enzotorricella.github.io/wdd231/chamber/directory.html
+The og:url content should be a full, canonical URL that helps social platforms with a shareable version of the page to associate engagement with the current page within the site.
+<body> Elements
+Elements Used
+Found 14 different element types on the page (ordered by frequency):
+<p> (11), <nav> (2), <section> (2), <strong> (2), <aside> (1), <em> (1), <figcaption> (1), <figure> (1), <footer> (1), <h1> (1), <h2> (1), <header> (1), <main> (1), <small> (1)
+<main>
+✅
+Document must contain a <main> element.
+✅ Found a <main> element.
+nav <a> links
+
+Found 14 <a> elements on the page.
+Link Text
+href
+target
+Skip to content
+✅ #main
+None
+rosario.CHAMBER OF COMMERCE
+✅ index.html
+None
+Home
+✅ index.html
+None
+Directory
+✅ directory.html
+None
+Join
+✅ join.html
+None
+Discover
+✅ discover.html
+None
+Explore the directory ↓
+✅ #directory
+None
+Explore membership
+✅ join.html
+None
+hello@rosariochamber.example
+✅ mailto:hello@rosariochamber.example
+None
+LinkedIn ↗
+✅ https://www.linkedin.com/
+None
+Instagram ↗
+✅ https://www.instagram.com/
+None
+YouTube ↗
+✅ https://www.youtube.com/
+None
+JeSantacruz
+✅ https://commons.wikimedia.org/wiki/File:A_la_Bandera.JPG
+None
+CC BY-SA 3.0
+✅ https://creativecommons.org/licenses/by-sa/3.0/
+None
+<h1>
+✅
+➡️ Requires Content Review: Local people.Remarkable work.
+Document must contain a single <h1> element inside the <main> element. The content should closely match the page title.
+Images
+All image files must be ✔correctly referenced, ✔be optimized(<= 125 kB), ✔have alt attribute.
+
+
+File Reference
+Size
+Alt Text
+✅ images/logo.svg
+✅ 0 kB
+✅ "No alt text"
+✅ images/rosario-monument.jpg
+✅ 40 kB
+✅ "National Flag Memorial overlooking Rosario's public square"
+CSS
+CSS Files
+The following CSS files were referenced in the HTML:
+styles/normalize.css
+styles/small.css
+styles/larger.css
+Google Fonts API
+✅
+Use Google Fonts (fonts.googleapis.com/...) and include all provided preconnect links
+Using the @import method is not allowed.
+
+✅ Found 1 Google Fonts stylesheet link, and required preconnects.
+   Families Used: Public+Sans:wght@400;600;700;800
+
+W3C CSS Validation
+✅
+
+No CSS validation errors were found. Use the link below to check for warnings or other useful information.
+
+••• ⚠️ Warnings Found: 1 •••
+
+🔗 CSS Validation Service Report on jigsaw.w3.org
+Parse Errors due to a modern nested CSS structure can be ignored.
+Warnings about the use of CSS Variables can be ignored.
+
+Inline Styles
+✅
+All CSS must be in external stylesheet files.
+Inline styles using the style attribute are not allowed.
+✅ No inline styles found.
+Embedded Styles
+✅
+Embedded styles using <style> tags are not allowed.
+✅ No embedded <style> tags found.
+CSS Frameworks
+✅
+CSS frameworks or utility libraries (Bootstrap, Tailwind, Foundation, etc.) are not permitted for this course. All styling must be custom CSS.
+✅ No CSS frameworks or framework use detected.
+!important
+✅
+The use of !important in CSS is not allowed.
+Use proper specificity and cascading to achieve desired styles.
+✅ No use of !important found in CSS...
+display: flex
+✅
+Use CSS Flex at least once.
+✅ Found display: flex (or inline-flex) in rules: .masthead, .brand, #navigation.open, .jump-link, .city-photo figcaption and 8 more...
+CSS Statistics
+Total Selectors:
+74
+Total Rules:
+68
+Total Declarations:
+215
+Repeated Declarations:
+0
+Color Types Used:
+var, named, hex
+⚠️ Note: Using multiple color types may indicate inconsistent styling.
+Consider standardizing your color approach.
+JavaScript
+External
+✅
+All JavaScript must be in external files.
+✅ All JavaScript is in external files.
+No onClick Attributes
+✅
+JavaScript event handlers must be added via external JS files, not HTML attributes.
+✅ No elements with onclick attributes found.
+document.write
+✅
+The document.write() method must not be used in JavaScript.
+✅ No use of document.write() found in external JS files.
+No jQuery
+✅
+jQuery must not be used in JavaScript.
+✅ No use of jQuery found.
+Referenced js Files
+✅ (file exists) scripts/directory.js • Location: ✅ <head> • ✅ (defer)
+JSON File
+✅
+The JSON file members.json must be stored in a data/ subfolder in the same directory as the page.
+✅ Expected location: https://enzotorricella.github.io/wdd231/chamber/data/members.json
+Accessibility
+Color Contrast (WCAG AA)
+Colors Used:
+Text Colors: colors
+body, input, select – var(--ink) | rgb(32 45 49)
+a:hover, .brand-dot, .count, .level::before, .closing-note > span – var(--accent) | rgb(174 66 39)
+h1 em – var(--blue) | rgb(23 77 100)
+.intro-description, .sample-note, #status, .description – var(--muted) | rgb(84 93 90)
+.view-toggle button[aria-pressed="true"] – white | rgb(255 255 255)
+footer – var(--paper) | rgb(246 243 235)
+footer a:hover – #ffd0ba | rgb(255 208 186)
+.credits – #dfdfd4 | rgb(223 223 212)
+Background Colors:
+body – var(--paper) | rgb(246 243 235)
+.skip-link – white | rgb(255 255 255)
+.view-toggle button[aria-pressed="true"], footer – var(--ink) | rgb(32 45 49)
+.list .member:nth-child(even) – #ebe9df | rgb(235 233 223)
+
+Color Contrast Ratios:
+
+Text must have sufficient contrast with its background at the WCAG AA level.
+
+Use CSS Overview in the browser's DevTools for details on actual, rendered color contrast.
+
+Text Color	Background	Ratio	Required	Status
+ rgb(0 0 0)	 rgb(255 255 255)	21.00:1	4.5:1 (normal)	🙂 OK
+ rgb(174 66 39)	 rgb(246 243 235)	5.25:1	3:1 (large)	🙂 OK
+ rgb(32 45 49)	 rgb(246 243 235)	12.79:1	4.5:1 (normal)	🙂 OK
+ rgb(23 77 100)	 rgb(246 243 235)	8.30:1	4.5:1 (normal)	🙂 OK
+ rgb(84 93 90)	 rgb(246 243 235)	6.13:1	4.5:1 (normal)	🙂 OK
+ rgb(255 255 255)	 rgb(32 45 49)	14.18:1	4.5:1 (normal)	🙂 OK
+ rgb(246 243 235)	 rgb(32 45 49)	12.79:1	4.5:1 (normal)	🙂 OK
+ rgb(223 223 212)	 rgb(32 45 49)	10.56:1	4.5:1 (normal)	🙂 OK
