@@ -1,0 +1,22 @@
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  text-align: center;
+}
+
+main {
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid #ddacac;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  text-transform: capitalize;
+  font-weight: bold;
+}
