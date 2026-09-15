@@ -20,24 +20,32 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/home.js" defer></script>
 </head>
-<body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header><div class="masthead wrap">
-        <a class="brand" href="index.html"><img src="images/logo.svg" width="48" height="48" alt=""><span>rosario<span class="brand-dot">.</span><small>CHAMBER OF COMMERCE</small></span></a>
-        <button id="menu-button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation menu">Menu <span aria-hidden="true">☰</span></button>
-        <nav id="navigation" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="directory.html">Directory</a><a href="join.html">Join</a><a href="discover.html">Discover</a></nav>
-    </div></header>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header><div class="masthead wrap">
+            <a class="brand" href="index.html"><img src="images/logo.svg" width="48" height="48" alt=""><span>rosario<span class="brand-dot">.</span><small>CHAMBER OF COMMERCE</small></span></a>
+            <button id="menu-button" aria-expanded="false" aria-controls="navigation" aria-label="Open navigation menu">Menu <span aria-hidden="true">☰</span></button>
+            <nav id="navigation" aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="directory.html">Directory</a><a href="join.html">Join</a><a href="discover.html">Discover</a></nav>
+        </div>
+</header>
     <main id="main">
         <section class="home-hero wrap" aria-labelledby="page-title">
             <img src="images/rosario-riverside-hero.jpg" width="1200" height="675" alt="Rosario riverside park, Paraná River, railway, and city skyline">
-            <div class="hero-message"><p class="eyebrow">ROSARIO, SANTA FE</p><h1 id="page-title">Grow here.<br><em>Belong here.</em></h1><p>Connect with the people and businesses shaping our city.</p><a class="cta" href="join.html">Join the chamber</a></div>
+            <div class="hero-message"><p class="eyebrow">ROSARIO, SANTA FE</p><h1 id="page-title">Grow here.<br><em>Belong Rosario.</em></h1><p>Connect with the people and businesses shaping our city.</p>
+                <a class="cta" href="join.html">Join the chamber</a></div>
         </section>
         <div class="home-grid wrap">
             <section class="events" aria-labelledby="events-title"><p class="eyebrow">WHAT'S HAPPENING</p><h2 id="events-title">Current events</h2>
                 <article><time datetime="2026-09-18">SEP 18</time><div><h3>Business after hours</h3><p>Meet local entrepreneurs at the riverside networking evening.</p></div></article>
                 <article><time datetime="2026-09-24">SEP 24</time><div><h3>Digital skills workshop</h3><p>Practical tools to help small businesses improve their online presence.</p></div></article>
             </section>
-            <section class="weather" aria-labelledby="weather-title"><p class="eyebrow">LIVE FROM ROSARIO</p><h2 id="weather-title">Weather</h2><div id="current-weather" class="current-weather" aria-live="polite"></div><p id="weather-status">Loading Rosario weather…</p><ul id="forecast" class="forecast"></ul></section>
+            <section class="weather" aria-labelledby="weather-title">
+                <p class="eyebrow">LIVE FROM ROSARIO</p>
+                <h2 id="weather-title">Weather</h2>
+                <div id="current-weather" class="current-weather" aria-live="polite"></div>
+                <p id="weather-status">Loading Rosario weather…</p>
+                <ul id="forecast" class="forecast"></ul>
+            </section>
         </div>
         <section class="member-feature wrap" aria-labelledby="spotlight-title"><p class="eyebrow">MEET OUR MEMBERS</p><h2 id="spotlight-title">Business spotlights</h2><div id="spotlights" class="spotlights" aria-live="polite"><p>Loading member spotlights…</p></div></section>
     </main>
