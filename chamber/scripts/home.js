@@ -20,20 +20,25 @@ const make = (tag, text, className) => {
 async function loadWeather() {
     const status = document.querySelector('#weather-status');
     try {
-        const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=-32.9468&lon=-60.6393&units=metric&appid=870b92ccf5bf295150f40244809649e3';
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`Weather request failed: ${response.status}`);
-        const data = await response.json();
-        const now = data.list[0];
+        const base = 'https://api.openweathermap.org/data/2.5';
+        const location = 'lat=-32.9468&lon=-60.6393&units=metric';
+        const key = 'appid=870b92ccf5bf295150f40244809649e3';
+        const [currentResponse, forecastResponse] = await Promise.all([
+            fetch(`${base}/weather?${location}&${key}`),
+            fetch(`${base}/forecast?${location}&${key}`)
+        ]);
+        if (!currentResponse.ok || !forecastResponse.ok) throw new Error('Weather request failed');
+        const current = await currentResponse.json();
+        const forecastData = await forecastResponse.json();
         const icon = make('img');
-        icon.src = `https://openweathermap.org/img/wn/${now.weather[0].icon}@2x.png`;
-        icon.alt = now.weather[0].description;
+        icon.src = `https://openweathermap.org/img/wn/${current.weather[0].icon}@2x.png`;
+        icon.alt = current.weather[0].description;
         icon.width = 100;
         icon.height = 100;
         const details = make('div');
-        details.append(make('strong', `${Math.round(now.main.temp)}°C`, 'temperature'), make('p', now.weather[0].description));
+        details.append(make('strong', `${Math.round(current.main.temp)}°C`, 'temperature'), make('p', current.weather[0].description));
         document.querySelector('#current-weather').replaceChildren(icon, details);
-        const days = data.list.filter(item => item.dt_txt.includes('12:00:00')).slice(0, 3);
+        const days = forecastData.list.filter(item => item.dt_txt.includes('12:00:00')).slice(0, 3);
         const formatter = new Intl.DateTimeFormat('en-US', {weekday: 'long', timeZone: 'America/Argentina/Buenos_Aires'});
         document.querySelector('#forecast').replaceChildren(...days.map(day => {
             const item = make('li');
