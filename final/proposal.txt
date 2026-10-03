@@ -1,0 +1,5 @@
+Project Subject: Pokémon Battle Challenge (BattleLab)
+
+BattleLab will be an interactive three-page website that uses PokéAPI data. Visitors will explore a roster of Pokémon, filter and inspect statistics, select a team of three, and compete against a randomly generated rival team. Each battle compares three randomly chosen base statistics in each of three rounds. The website will also save the selected team, trainer preferences, and battle record in the browser.
+
+I chose this subject because I enjoy Pokémon and wanted to create something more interactive than a traditional Pokédex. This project gives me a practical way to apply asynchronous data fetching, JavaScript array methods, DOM manipulation, event handling, modal dialogs, local storage, accessible forms, responsive design, and error handling while building a simple game experience.

@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project | Enzo Torricella</title>
-    <meta name="description" content="Final Project project area for Enzo Torricella's WDD 231 course.">
-    <meta name="author" content="Enzo Torricella">
-    <link rel="icon" href="../images/logo.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../styles/small.css">
-    <link rel="stylesheet" href="../styles/larger.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BattleLab | Pokémon Battle Challenge</title>
+  <meta name="description" content="Choose three Pokémon and challenge a randomly generated rival team in a simple stat battle.">
+  <meta name="author" content="Enzo Torricella">
+  <meta property="og:title" content="BattleLab Pokémon Challenge">
+  <meta property="og:description" content="Choose three Pokémon and start a simulated stat battle.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://enzotorricella.github.io/wdd231/final/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/shared.js"></script>
 </head>
 <body>
-    <header><div class="header-inner"><img src="../images/logo.svg" alt="ET site logo" width="48" height="48"><span>Enzo Torricella · WDD 231</span></div></header>
-    <main><h1>Final Project</h1><p>This project begins in week 6. This space is ready for the upcoming assignment.</p><a href="../">Return to course home</a></main>
-    <footer><p>Enzo Torricella · Argentina</p></footer>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="BattleLab home"><span class="brand-mark" aria-hidden="true"></span><span>Battle<span>Lab</span></span></a>
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Primary navigation"><a href="index.html" aria-current="page">Home</a><a href="team.html">Play</a><a href="battle.html">Battle guide</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="simple-hero">
+      <div class="simple-hero-copy">
+        <p class="eyebrow">POKÉMON STAT CHALLENGE</p>
+        <h1>Choose three.<br>Start the battle.</h1>
+        <p>Select your Pokémon, face a random rival team, and compare their stats in three simulated rounds.</p>
+        <a class="button primary" href="team.html">Play now <span aria-hidden="true">⚡</span></a>
+      </div>
+      <div class="simple-hero-art">
+        <div class="hero-disc" aria-hidden="true"></div>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/448.png" alt="Lucario" width="475" height="475">
+      </div>
+    </section>
+
+    <section class="simple-info">
+      <h2>Three picks. Three rounds.</h2>
+      <p>Filter the roster by type, choose three different Pokémon, and let BattleLab determine the winner using data from PokéAPI.</p>
+      <a href="battle.html">How does the battle work? →</a>
+    </section>
+
+    <section class="section trainer-section" aria-labelledby="trainer-title">
+      <div>
+        <p class="eyebrow">TRAINER PROFILE</p>
+        <h2 id="trainer-title">Set your battle style.</h2>
+        <p>Create a small trainer profile before entering the arena. Your choices will be shown on the confirmation page and saved in this browser.</p>
+      </div>
+      <form class="trainer-form" action="profile.html" method="get">
+        <label for="trainer">Trainer name</label>
+        <input id="trainer" name="trainer" type="text" autocomplete="name" minlength="2" maxlength="20" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="style">Preferred battle style</label>
+        <select id="style" name="style" required>
+          <option value="" selected disabled>Choose a style</option>
+          <option value="balanced">Balanced</option>
+          <option value="all-out-attack">All-out attack</option>
+          <option value="defensive">Defensive</option>
+        </select>
+        <label class="check"><input id="tips" name="tips" type="checkbox" value="yes"> Send me strategy tips</label>
+        <button class="button primary" type="submit">Save trainer profile</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Battle<span>Lab</span></span></a><p>A WDD 231 student project powered by PokéAPI.</p></div><div><strong>Explore</strong><a href="team.html">Play</a><a href="battle.html">Battle guide</a><a href="attributions.html">Attributions</a></div><div><strong>Course</strong><a href="siteplan.html">Site plan</a><a href="video.html">Video demonstration</a><span>© <span data-year></span> Enzo Torricella</span></div></footer>
 </body>
 </html>

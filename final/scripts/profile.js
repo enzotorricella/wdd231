@@ -1,0 +1,10 @@
+import { PROFILE_KEY } from "./shared.js";
+const params = new URLSearchParams(window.location.search);
+const trainer = (params.get("trainer") || "Trainer").slice(0, 20);
+const email = params.get("email") || "Not provided";
+const style = params.get("style") || "balanced";
+const tips = params.get("tips") === "yes";
+const profile = { trainer, email, style, tips };
+localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
+document.querySelector("#profile-name").textContent = trainer;
+document.querySelector("#profile-summary").innerHTML = `<h2>Your preferences</h2><p><strong>Email:</strong> ${email}</p><p><strong>Battle style:</strong> ${style.replaceAll("-", " ")}</p><p><strong>Strategy tips:</strong> ${tips ? "Enabled" : "Disabled"}</p><p>Your trainer profile was saved in this browser.</p>`;

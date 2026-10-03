@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Play | Pokémon Battle Challenge</title>
+  <meta name="description" content="Choose three Pokémon from dropdown menus and run a simulated three-round stat battle.">
+  <meta name="author" content="Enzo Torricella">
+  <meta property="og:title" content="Play BattleLab">
+  <meta property="og:description" content="Select three Pokémon and start a simulated stat battle.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://enzotorricella.github.io/wdd231/final/team.html">
+  <meta property="og:image" content="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/team.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="BattleLab home"><span class="brand-mark" aria-hidden="true"></span><span>Battle<span>Lab</span></span></a>
+    <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="team.html" aria-current="page">Play</a><a href="battle.html">Battle guide</a></nav>
+  </header>
+  <main id="main">
+    <section class="page-hero compact-hero"><p class="eyebrow">TEAM SELECT // PLAYER 01</p><h1>Pick three. Fight now.</h1><p>Filter the roster, choose three different fighters, and launch the simulation from this screen.</p></section>
+
+    <section class="game-console" aria-labelledby="select-title">
+      <div class="console-head"><div><p class="eyebrow">ROSTER TERMINAL</p><h2 id="select-title">Build your squad</h2></div><p id="roster-status" class="system-status" aria-live="polite">Connecting to PokéAPI…</p></div>
+
+      <div class="type-control"><label for="type-filter">Filter all slots by type</label><select id="type-filter" disabled><option value="all">All Pokémon types</option></select></div>
+
+      <div class="selector-grid">
+        <article class="fighter-slot" data-slot="0"><span class="slot-number">01</span><div class="slot-preview"><div class="slot-placeholder" aria-hidden="true">?</div></div><label for="pokemon-one">First fighter</label><select id="pokemon-one" class="pokemon-select" disabled><option value="">Choose Pokémon…</option></select><button class="slot-details" type="button" data-details="0" disabled>Inspect stats</button></article>
+        <article class="fighter-slot" data-slot="1"><span class="slot-number">02</span><div class="slot-preview"><div class="slot-placeholder" aria-hidden="true">?</div></div><label for="pokemon-two">Second fighter</label><select id="pokemon-two" class="pokemon-select" disabled><option value="">Choose Pokémon…</option></select><button class="slot-details" type="button" data-details="1" disabled>Inspect stats</button></article>
+        <article class="fighter-slot" data-slot="2"><span class="slot-number">03</span><div class="slot-preview"><div class="slot-placeholder" aria-hidden="true">?</div></div><label for="pokemon-three">Third fighter</label><select id="pokemon-three" class="pokemon-select" disabled><option value="">Choose Pokémon…</option></select><button class="slot-details" type="button" data-details="2" disabled>Inspect stats</button></article>
+      </div>
+
+      <div class="launch-zone"><div><span>TEAM STATUS</span><strong id="team-readiness">0 / 3 FIGHTERS READY</strong></div><button id="start-battle" class="button primary disabled" type="button" disabled>Start battle <span aria-hidden="true">⚡</span></button></div>
+    </section>
+
+    <section class="roster-section" aria-labelledby="roster-title">
+      <div class="roster-heading">
+        <div><p class="eyebrow">LIVE DATA // POKÉAPI</p><h2 id="roster-title">Explore the roster</h2></div>
+        <p>Thirty fighters generated from live API data. Open any card to inspect its complete statistics.</p>
+      </div>
+      <div id="roster-gallery" class="roster-gallery" aria-live="polite">
+        <p class="loading">Loading fighter data…</p>
+      </div>
+    </section>
+
+    <section id="battle-results" class="inline-arena" aria-live="polite" hidden></section>
+  </main>
+
+  <dialog id="pokemon-modal" class="pokemon-modal" aria-labelledby="modal-name"><button class="modal-close" type="button" aria-label="Close details">×</button><div id="modal-content"></div></dialog>
+  <dialog id="result-modal" class="result-modal" aria-labelledby="result-title"><div id="result-content"></div><button id="close-result" class="button primary" type="button">View rounds</button></dialog>
+
+  <footer class="site-footer"><div><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span>Battle<span>Lab</span></span></a><p>A student-built stat challenge powered by PokéAPI.</p></div><div><strong>Play</strong><a href="team.html">Team battle</a><a href="battle.html">Battle guide</a><a href="attributions.html">Attributions</a></div><div><strong>Course</strong><a href="siteplan.html">Site plan</a><a href="video.html">Video demonstration</a><span>© <span data-year></span> Enzo Torricella</span></div></footer>
+</body>
+</html>
