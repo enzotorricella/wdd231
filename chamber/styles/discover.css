@@ -1,9 +1,8 @@
 .discover-hero { display: grid; gap: 24px; padding: 44px 0 32px; border-bottom: 1px solid var(--ink); }
 .discover-hero h1 { margin-bottom: 16px; }
 .discover-hero .intro-description { margin-bottom: 0; }
-.visit-panel { align-self: end; padding: 20px; border: 1px solid var(--line); border-left: 5px solid var(--accent); background: #fffdf7; }
-.visit-panel .eyebrow { margin-bottom: 8px; }
-.visit-panel p:last-child { margin: 0; font-weight: 600; }
+.visit-panel { align-self: end; padding-bottom: 6px; color: var(--muted); }
+.visit-panel p { margin: 0; font-size: .9rem; }
 .discover-section { padding: 34px 0 56px; }
 .section-heading { margin-bottom: 26px; }
 .section-heading .eyebrow { margin-bottom: 7px; }

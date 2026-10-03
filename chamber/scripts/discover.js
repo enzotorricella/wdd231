@@ -45,7 +45,8 @@ places.forEach((place, index) => {
   description.textContent = place.description;
   const action = document.createElement("button");
   action.type = "button";
-  action.textContent = "Learn more";
+  action.textContent = "View on Google Maps";
+  action.setAttribute("aria-label", `View ${place.name} on Google Maps (opens in a new tab)`);
   action.addEventListener("click", () => window.open(place.map, "_blank", "noopener,noreferrer"));
   card.append(title, figure, address, description, action);
   fragment.append(card);
