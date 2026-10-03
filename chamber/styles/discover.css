@@ -1,0 +1,32 @@
+.discover-hero { display: grid; gap: 24px; padding: 44px 0 32px; border-bottom: 1px solid var(--ink); }
+.discover-hero h1 { margin-bottom: 16px; }
+.discover-hero .intro-description { margin-bottom: 0; }
+.visit-panel { align-self: end; padding: 20px; border: 1px solid var(--line); border-left: 5px solid var(--accent); background: #fffdf7; }
+.visit-panel .eyebrow { margin-bottom: 8px; }
+.visit-panel p:last-child { margin: 0; font-weight: 600; }
+.discover-section { padding: 34px 0 56px; }
+.section-heading { margin-bottom: 26px; }
+.section-heading .eyebrow { margin-bottom: 7px; }
+.section-heading p:last-child { max-width: 680px; color: var(--muted); }
+.discover-grid { display: grid; gap: 24px; }
+.place-card { display: grid; grid-template-areas: "name" "image" "location" "description" "action"; gap: 14px; padding: 20px; border: 1px solid var(--line); background: #fffdf7; }
+.place-card h2 { grid-area: name; font-size: 1.35rem; }
+.place-card figure { grid-area: image; margin: 0; overflow: hidden; }
+.place-card img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.place-card address { grid-area: location; font-size: .78rem; font-style: normal; font-weight: 700; color: var(--accent); }
+.place-card p { grid-area: description; margin: 0; font-size: .9rem; color: var(--muted); }
+.place-card button { grid-area: action; justify-self: start; padding-inline: 18px; background: var(--ink); color: white; border-color: var(--ink); font-weight: 700; cursor: pointer; }
+.place-card button:hover { background: var(--accent); border-color: var(--accent); }
+@media (min-width: 641px) {
+  .discover-hero { grid-template-columns: 1.5fr 1fr; align-items: end; }
+  .place-card { grid-template-columns: minmax(230px, .8fr) 1.2fr; grid-template-areas: "image name" "image location" "image description" "image action"; align-items: start; }
+  .place-card:nth-child(even) { grid-template-columns: 1.2fr minmax(230px, .8fr); grid-template-areas: "name image" "location image" "description image" "action image"; }
+  .place-card img { transition: transform .3s ease, filter .3s ease; }
+  .place-card img:hover { transform: scale(1.04); filter: saturate(1.2) contrast(1.05); }
+}
+@media (min-width: 1025px) {
+  .discover-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+  .place-card, .place-card:nth-child(even) { grid-template-columns: minmax(160px, .85fr) 1.15fr; grid-template-areas: "image name" "image location" "description description" "action action"; }
+  .place-card h2 { align-self: end; }
+  .place-card button { margin-top: 4px; }
+}
