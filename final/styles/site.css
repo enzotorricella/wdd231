@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap');
-
 /* Dynamic roster */
 .roster-section{padding:clamp(3rem,6vw,5rem) clamp(1rem,4vw,4rem);background:#090e1d;border-top:1px solid var(--line)}
 .roster-heading{display:flex;align-items:end;justify-content:space-between;gap:2rem;max-width:1180px;margin:0 auto 2rem}.roster-heading h2{font:700 clamp(2rem,4vw,3.6rem)/1 var(--display);text-transform:uppercase;margin:.2rem 0}.roster-heading>p{max-width:470px;color:var(--muted)}

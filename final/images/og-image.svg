@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">BattleLab Pokémon stat challenge</title>
+  <desc id="desc">BattleLab logo and the words choose three, start the battle.</desc>
+  <rect width="1200" height="630" fill="#060914"/>
+  <circle cx="245" cy="315" r="145" fill="#f7ed4b"/>
+  <path d="M100 315a145 145 0 0 1 290 0H100Z" fill="#ff4f91"/>
+  <path d="M100 315h290" stroke="#f5f7ff" stroke-width="32"/>
+  <circle cx="245" cy="315" r="42" fill="#060914" stroke="#f5f7ff" stroke-width="18"/>
+  <text x="455" y="260" fill="#f5f7ff" font-family="Arial,sans-serif" font-size="96" font-weight="700">Battle<tspan fill="#35e7ff">Lab</tspan></text>
+  <text x="462" y="350" fill="#f7ed4b" font-family="Arial,sans-serif" font-size="47" font-weight="700">CHOOSE THREE.</text>
+  <text x="462" y="415" fill="#f5f7ff" font-family="Arial,sans-serif" font-size="47" font-weight="700">START THE BATTLE.</text>
+</svg>
+
